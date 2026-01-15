@@ -43,3 +43,8 @@ img {
     list-style-type: none;
 
 }
+
+.background {
+    background-color: black;
+    color: white;
+}
