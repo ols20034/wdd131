@@ -1,0 +1,62 @@
+.dark {
+    background-color: black;
+    color: white;
+    transition: background 1s ease;
+}
+
+.light {
+    background-color: white;
+    color: black;
+    transition: background 1s ease;
+}
+
+body {
+    background-color: white;
+    font-size: 20px;
+    font-style: bold;
+}
+
+#content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 50px 150px;
+    border: 1px solid darkgrey;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(113, 146, 189);
+    font-size: 20px;
+}
+
+.intro {
+    margin-top: 50px;
+    text-align: left;
+    margin-bottom: 1.2em;
+}
+
+.details {
+    text-align: left;
+    margin-bottom: 1.0em;
+    font-style: italic;
+}
+
+ol {
+    margin-left: 20px;
+    line-height: 1.5em;
+}
+
+ol li {
+    margin-bottom: 0.8em;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 70px auto 0;
+}
