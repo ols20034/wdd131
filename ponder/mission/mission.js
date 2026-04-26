@@ -6,7 +6,7 @@ selectElem.addEventListener('change', changeTheme);
 function changeTheme() {
     let current = selectElem.value;
 
-    if (current === 'dark') {
+    if (current === 'dark'){
         document.body.classList.add('dark');
         document.body.classList.remove('light');
         logo.src = "images/byui-logo-white.png";
