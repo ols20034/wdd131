@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meta Tags and CSS Review</title>
     <link href="meta-css.css" rel="stylesheet">
+    <script defer src="variables-constants.js"></script>
+    <script defer src="dom.js"></script>
 
 </head>
 <body>
@@ -14,7 +16,16 @@
         <h1>HTML, CSS, and JS</h1>
         <p>The foundational technologies that power websites and web applications</p>
         <hr>
-        <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">            
+        <img src="https://wddbyui.github.io/wdd131/images/trifecta.png" alt="JS, CSS, and HTML logos">
+        
+        <label for="webdevlist">Choose One:</label>
+        <select name="code" id="webdevlist">
+        <option>Choose One:</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+</select>                   
+            
         <div id="topics">
             <h2>HyperText Markup Language</h2>
             <ul class="list">
