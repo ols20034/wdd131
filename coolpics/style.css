@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0496ff;
+  color: white;
+  padding: 1rem;
+  position: center;
+  text-align: center;
+}
+
+h1 {
+  border: 8px solid white;
+  box-sizing: border-box;
+  display: block;
+
+}
+.gallery {
+  display: grid;
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.nav-links {
+  display: none;
+}
+
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Mobile: 1 column */
+@media (max-width: 599px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-button {
+    display: block;
+  }
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 600px) and (max-width: 899px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+
+
+/* Desktop: 3 columns */
+@media (min-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu-button {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+  }
+}
