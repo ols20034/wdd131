@@ -1,0 +1,200 @@
+body{
+margin:0;
+font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+
+.header{
+padding:20px;
+border-bottom:1px solid black;
+}
+
+.logo-title{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+margin-bottom:15px;
+}
+
+.logo-title img{
+width:150px;
+height:150px;
+}
+
+.logo-title h1{
+font-family:'Amatic SC', cursive;
+font-size:90px;
+margin:0;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* SEARCH BAR */
+
+.search {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    width: auto;
+    max-width: 90%;
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-btn img {
+    width: 30px;
+    border-left: 1px solid black;
+    padding-left: 8px;
+    pointer-events: none; /* prevents blocking input */
+}
+
+
+/* RECIPE CARD (MOBILE FIRST) */
+
+.recipe{
+border:1px solid #000;
+margin:20px auto;
+padding:20px;
+max-width:460px;
+display:flex;
+flex-direction:column; /* mobile stack */
+align-items: center;
+gap:15px;
+}
+
+.recipe img{
+width:auto;
+max-width:100%;
+border-radius:8px;
+}
+
+.recipe-info{
+text-align: center;
+}
+.description{
+  display: none;
+}
+.recipe-info h2{
+font-family:'Amatic SC', cursive;
+font-size:32px;
+margin:5px 0px;
+color: blue;
+font-weight: bold;
+}
+
+
+.recipe-type{
+display:inline-block;
+border:1px solid #999;
+background:#eee;
+padding:10px 24px;
+font-size:18px;
+margin-top:8px;
+align-self: flex-start;
+
+}
+
+.rating{
+font-size:20px;
+}
+
+
+
+/* FOOTER */
+
+footer{
+padding:20px;
+border-top:1px solid #ddd;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.social img{
+width:30px;
+margin:0 5px;
+}
+
+/* ========================= */
+/* DESKTOP */
+/* ========================= */
+
+@media screen and (min-width: 700px){
+
+
+.search {
+    max-width: 1000px;
+}
+.recipe {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+      max-width: 1000px;
+  }
+
+  .recipe img {
+      width: 400px;
+  }
+
+  .recipe-text {
+      display: flex;
+      flex-direction: column;
+      padding-left: 20px;
+  }
+
+  .recipe-info {
+      text-align: left;
+      padding-top: 30px;
+  }
+
+  .recipe-type {
+      font-weight: bold;
+      font-size: 20px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between; /* pushes left + right apart */
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* optional: keeps layout neat */
+    margin: 0 auto;    /* centers the footer container */
+  }
+
+.social {
+    order: 1;
+  }
+  
+  .description {
+      display: block;
+      text-align: left;
+      padding: 8px;
+  }
+
+
+}
