@@ -58,4 +58,4 @@ const events = [
     Shooters compete for prizes—including turkeys—using traditional muzzleloaders. A fun and 
     festive way to celebrate the Thanksgiving season while honoring frontier marksmanship.`
   }
-];
+];  // <-- THIS was missing!
